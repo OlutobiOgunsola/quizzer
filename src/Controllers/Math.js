@@ -90,7 +90,7 @@ exports.MathController = class MathController {
       },
     ];
 
-    let info = "This API returns questions from a bag of 10 questions."
+    let info = "This API returns questions from a bag of 10 questions. Route '/' gets all the questions, and '/:question_id' gets a specific question"
 
     this.getAllMathController = (req, res, next) => {
       return res.status(200).json({
